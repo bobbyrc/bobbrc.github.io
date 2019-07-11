@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Contact Us</title>
+    <meta name="description" content="Contact page" />
+    <meta name="author" content="Bobby Craig" />
+
+    <link rel="stylesheet" href="css/reset.css?v=1.0" />
+    <link rel="stylesheet" href="css/styles.css?v=1.0" />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="section__slideshow">
+        <img
+          src="https://cdn.vox-cdn.com/thumbor/MAm3zB5f0zN2T5Oc8SkZM2wUe4c=/0x44:1273x940/1200x800/filters:focal(344x436:548x640)/cdn.vox-cdn.com/uploads/chorus_image/image/56894125/yoshi.0.png"
+          alt="Super Mario World"
+          class="gameSlide"
+        />
+        <img
+          src="https://cdn.vox-cdn.com/thumbor/Dohq5WglxZnXDeh2N27qhlb3npI=/0x0:1024x768/1200x800/filters:focal(431x303:593x465)/cdn.vox-cdn.com/uploads/chorus_image/image/57133549/super_metroid.0.png"
+          alt="Super Metroid"
+          class="gameSlide"
+        />
+        <img
+          src="https://i.stack.imgur.com/dl982.jpg"
+          alt="Super Mario Kart"
+          class="gameSlide"
+        />
+        <img
+          src="http://www.voletic.com/wp-content/uploads/2017/01/maxresdefault-1.jpg"
+          alt="The Legend of Zelda: A Link to the Past"
+          class="gameSlide"
+        />
+        <img
+          src="https://i0.wp.com/punishedbacklog.com/wp-content/uploads/2018/03/Donkey-Kong-Country-Featured-Image.jpg?fit=1444%2C1083"
+          alt="Donkey Kong Country"
+          class="gameSlide"
+        />
+        <img src="assets/RetroPieSupplyLogo.png" class="logo" />
+      </div>
+      <!-- End of slideshow div -->
+      <nav class="navBar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product_list.html">Products</a></li>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h2 class="pageTitle element--bottomMargin">Contact Us</h2>
+
+      <form onsubmit="getContactForm()" class="contactForm">
+        <div class="formSection">
+          <div class="contactFormElement">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Smith"
+              required
+            />
+          </div>
+
+          <div class="contactFormElement">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="jsmith@gmail.com"
+              required
+            />
+          </div>
+
+          <div class="contactFormElement">
+            <label for="phone">Phone:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              minlength="14"
+              maxlength="14"
+              placeholder="(555) 555-5555"
+              required
+            />
+          </div>
+        </div>
+        <!-- End of form section -->
+
+        <div class="formSection">
+          <p>Preferred Contact Method:</p>
+          <div class="contactFormElement">
+            <input
+              type="radio"
+              id="contactEmail"
+              name="contactMethod"
+              value="email"
+              required
+            />
+            <label for="contactEmail">Email</label>
+          </div>
+
+          <div class="contactFormElement">
+            <input
+              type="radio"
+              id="contactPhone"
+              name="contactMethod"
+              value="phone"
+            />
+            <label for="contactPhone">Phone</label>
+          </div>
+        </div>
+        <!-- End of form section -->
+
+        <div class="formSection">
+          <div class="contactFormElement">
+            <fieldset>
+              <legend>How did you hear about us?</legend>
+              <div>
+                <input type="checkbox" id="tv" name="referrer" value="tv" />
+                <label for="tv">TV</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="radio"
+                  name="referrer"
+                  value="radio"
+                />
+                <label for="radio">Radio</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="conference"
+                  name="referrer"
+                  value="conference"
+                />
+                <label for="conference">Conference</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="wordOfMouth"
+                  name="referrer"
+                  value="wordOfMouth"
+                />
+                <label for="wordOfMouth">Word of Mouth</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="other"
+                  name="referrer"
+                  value="other"
+                />
+                <label for="other">Other</label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+        <!-- End of form section -->
+
+        <div class="formSection">
+          <div class="contactFormElement">
+            <label for="comments" id="commentLabel">Comments:</label>
+
+            <textarea
+              id="comments"
+              name="comments"
+              rows="5"
+              cols="33"
+              placeholder="Let us know what you think..."
+            ></textarea>
+          </div>
+        </div>
+        <!-- End of form section -->
+
+        <div class="contactFormElement">
+          <input type="submit" value="Send" />
+        </div>
+      </form>
+    </div>
+    <!-- End of container div -->
+
+    <footer class="main-footer">
+      <p>© 2019 RetroPie Supply</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>RetroPie Supply</title>
+    <meta name="description" content="A place to buy RetroPie items" />
+    <meta name="author" content="Bobby Craig" />
+
+    <link rel="stylesheet" href="css/reset.css?v=1.0" />
+    <link rel="stylesheet" href="css/styles.css?v=1.0" />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="section__slideshow">
+        <img
+          src="https://cdn.vox-cdn.com/thumbor/MAm3zB5f0zN2T5Oc8SkZM2wUe4c=/0x44:1273x940/1200x800/filters:focal(344x436:548x640)/cdn.vox-cdn.com/uploads/chorus_image/image/56894125/yoshi.0.png"
+          alt="Super Mario World"
+          class="gameSlide"
+        />
+        <img
+          src="https://cdn.vox-cdn.com/thumbor/Dohq5WglxZnXDeh2N27qhlb3npI=/0x0:1024x768/1200x800/filters:focal(431x303:593x465)/cdn.vox-cdn.com/uploads/chorus_image/image/57133549/super_metroid.0.png"
+          alt="Super Metroid"
+          class="gameSlide"
+        />
+        <img
+          src="https://i.stack.imgur.com/dl982.jpg"
+          alt="Super Mario Kart"
+          class="gameSlide"
+        />
+        <img
+          src="http://www.voletic.com/wp-content/uploads/2017/01/maxresdefault-1.jpg"
+          alt="The Legend of Zelda: A Link to the Past"
+          class="gameSlide"
+        />
+        <img
+          src="https://i0.wp.com/punishedbacklog.com/wp-content/uploads/2018/03/Donkey-Kong-Country-Featured-Image.jpg?fit=1444%2C1083"
+          alt="Donkey Kong Country"
+          class="gameSlide"
+        />
+        <img src="assets/RetroPieSupplyLogo.png" class="logo" />
+      </div>
+      <!-- End of slideshow div -->
+      <nav class="navBar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product_list.html">Products</a></li>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h2 class="pageTitle element--bottomMargin">Search</h2>
+
+      <form action="#" method="GET">
+        <div class="searchFormElement">
+          <label for="searchTerm">Search for:</label>
+          <input type="text" id="searchTerm" name="searchTerm" />
+        </div>
+        <!-- End of search term div -->
+
+        <div class="searchFormElement">
+          <label for="priceSort">Sort by price:</label>
+
+          <select id="priceSort element--bottomMargin">
+            <option value="none">None</option>
+            <option value="lowToHigh">Low To High</option>
+            <option value="highToLow">High To Low</option>
+          </select>
+        </div>
+        <!-- End of price sort div -->
+
+        <div class="searchFormElement">
+          <input type="submit" value="Filter" />
+        </div>
+        <!-- End of filter div -->
+      </form>
+
+      <div class="searchResults"></div>
+      <!-- End of search results div -->
+    </div>
+    <!-- End of container div -->
+
+    <footer class="main-footer">
+      <p>© 2019 RetroPie Supply</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

@@ -1,44 +1,20 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Grade Book</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="script.js"></script>
+
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0" />
   </head>
+
   <body>
-    <h1>Grade book for %Insert Your Name Here%</h1>
-    <form>
-      <h2>Grades</h2>
-      <label for="subject">Subject:</label>
-      <input id="subject" type="text" name="subject" />
+    <a href="/gradebook/index.html">Grade Book</a>
+    <a href="/retropie/index.html">RetroPie Supply</a>
 
-      <label for="assignment">Assignment:</label>
-      <input id="assignment" type="text" name="assignment" />
-
-      <label for="score">Score:</label>
-      <input id="score" type="text" name="score" />
-
-      <input
-        type="submit"
-        value="Submit"
-        id="submit"
-        onclick="return addRow()"
-      />
-    </form>
-    <table>
-      <thead>
-        <tr>
-          <th>Subject</th>
-          <th>Assignment</th>
-          <th>Score</th>
-        </tr>
-      </thead>
-      <tbody id="container"></tbody>
-    </table>
-    <h3 id="average" style="display: none;">
-      GPA: <span id="gpa">%Average%</span>
-    </h3>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

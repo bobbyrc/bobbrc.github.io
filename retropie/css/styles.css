@@ -1,0 +1,179 @@
+/* ----- Content ----- */
+.main-header {
+  margin: 0 0 25px 0;
+  width: 100%;
+  text-align: center;
+  /* Effectively 180px + 45px (225px) high, as the slideshow and nav bar inside are those heights */
+}
+
+body {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  background-color: whitesmoke;
+}
+
+.container {
+  max-width: 75%;
+  min-height: calc(
+    100vh - 275px
+  ); /* 100% of viewport height, minus height of header (225px) and footer (25px),
+  plus another footer height (25px) to pull it up on screen since it's pushed below
+  the container */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-footer {
+  width: 100%;
+  height: 25px;
+  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  max-height: 80%;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+a {
+  display: block;
+}
+
+/* ----- Slideshow ----- */
+.section__slideshow {
+  height: 180px;
+  position: relative;
+}
+
+.gameSlide {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  object-fit: cover;
+}
+
+/* ----- Nav Bar ----- */
+.navBar {
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+
+.navBar ul {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(66, 66, 66);
+}
+
+.navBar ul li {
+  display: inline-block;
+  padding: 2.5px 0;
+}
+
+.navBar ul li a {
+  text-decoration: none;
+  padding: 12px;
+  color: azure;
+}
+
+/* ----- Index ----- */
+.featuredGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+}
+
+.featured__item {
+  width: calc(100% - 20px);
+  padding: 5px;
+  border: 5px ridge rgba(66, 66, 66, 0.75);
+  border-radius: 8px;
+}
+
+.featured__img {
+  height: 100%;
+  width: 100%;
+}
+
+/* ----- Product List ----- */
+.productGrid {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  justify-items: center;
+}
+
+.product {
+  height: 250px;
+  width: 250px;
+  padding: 5px;
+  border: 5px ridge rgba(66, 66, 66, 0.75);
+  border-radius: 8px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product__img {
+  max-height: 80%;
+  max-width: 80%;
+}
+
+/* ----- Product Details ----- */
+.details {
+  height: calc(100vh - 275px);
+  width: 100%;
+}
+
+.details__img {
+  max-height: 80%;
+  max-width: 80%;
+}
+
+/* ----- Contact Page ----- */
+.formSection {
+  margin-bottom: 12px;
+}
+
+#commentLabel {
+  display: block;
+}
+
+/* ----- Element Modifiers ----- */
+.element--bottomMargin {
+  margin-bottom: 12px;
+}
+
+.element--topMargin {
+  margin-top: 12px;
+}
+
+/* ----- Media Queries ----- */
+@media (min-width: 800px) {
+  .productGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
